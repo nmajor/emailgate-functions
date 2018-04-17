@@ -29,7 +29,6 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "serverless-webpack": "^4.2.0",
     "crypto": "^1.0.1",
     "fs": "^0.0.1-security",
     "html-pdf": "^2.2.0",
@@ -37,6 +36,7 @@
     "manta": "^5.1.1",
     "mongodb": "^2.1.16",
     "pdfjs-dist": "^2.0.489",
+    "serverless-webpack": "^4.2.0",
     "shortid": "^2.2.8"
   }
 }

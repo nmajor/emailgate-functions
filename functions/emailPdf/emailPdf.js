@@ -45,8 +45,8 @@ function savePdfResults(email, pdfResults) {
 }
 
 export default function emailPdf(event, context, callback) {
-  // const emailId = 'HkGba-mwf-';
-  const emailId = event.pathParameters.id;
+  const emailId = 'HkGba-mwf-';
+  // const emailId = event.pathParameters.id;
 
   return getEmail(emailId)
   .then(email => {
