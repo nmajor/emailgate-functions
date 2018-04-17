@@ -35,7 +35,7 @@
     "html-pdf": "^2.2.0",
     "https": "^1.0.0",
     "manta": "^5.1.1",
-    "mongodb": "^3.0.6",
+    "mongodb": "^2.1.16",
     "pdfjs-dist": "^2.0.489",
     "shortid": "^2.2.8"
   }

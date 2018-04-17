@@ -1,3 +1,8 @@
+serverless deploy
+
+serverless invoke local --function emailPdf
+
+
 3. **Create a Service:**
 
   You can create a new service or [install existing services](#how-to-install-a-service).

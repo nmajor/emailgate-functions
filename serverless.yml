@@ -16,8 +16,16 @@ provider:
 
 functions:
   emailPdf:
-    handler: functions/emailPdf/emailPdf.js
+    handler: functions/emailPdf/emailPdf.default
     events:
       - http:
           path: emails/{id}/pdf
           method: post
+    environment:
+      MONGO_URL: ${file(./env.yml):MONGO_URL}
+      MANTA_APP_KEY: ${file(./env.yml):MANTA_APP_KEY}
+      MANTA_APP_KEY_ID: ${file(./env.yml):MANTA_APP_KEY_ID}
+      MANTA_APP_USER: ${file(./env.yml):MANTA_APP_USER}
+      MANTA_APP_USER_ID: ${file(./env.yml):MANTA_APP_USER_ID}
+      MANTA_APP_URL: ${file(./env.yml):MANTA_APP_URL}
+      MANTA_APP_PUBLIC_PATH: ${file(./env.yml):MANTA_APP_PUBLIC_PATH}
